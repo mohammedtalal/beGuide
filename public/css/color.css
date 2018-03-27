@@ -1,0 +1,244 @@
+@media(max-width: 775px){
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+        background-color: #262626
+    }
+}
+
+.adding_company{
+    background-color: #3f454d!important
+}
+
+.navbar .lang a{
+    color: #108bea!important
+}
+
+.socials a:hover{
+    color: #108bea!important;
+    background-color: transparent!important
+}
+
+.main .heading span{
+    color: #108bea;
+}
+
+.main form{
+    background-color: rgba(63, 69, 77, .5)
+}
+
+.main input[type="submit"]{
+    background-color: #108bea;
+    border-color: #108bea
+}
+
+.main input[type="submit"]:hover{
+    background-color: #262626;
+    border-color: #262626
+}
+
+.main form label {
+    color: #fff;
+}
+
+.best_clients {
+    padding: 40px 0 60px;
+}
+
+.best_clients .heading h2 hr{
+    background-color: #f0f3f6
+}
+
+.best_clients .client .client_body a {
+    color: #fbb03b;
+}
+
+.new_client {
+    background-color: rgba(63, 69, 77, 1)
+}
+
+.subscripe {
+    background: url(../img/subscripe.jpg) no-repeat right bottom fixed;
+    border-bottom: 5px solid #3f454d!important;
+    background-size: cover;
+    border-bottom: 5px solid #3f454d!important
+}
+
+.subscripe .overlay{
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.subscripe h2 {
+    color: #108bea;
+    margin-bottom: 10px
+}
+
+.subscripe p{
+    color: #fff;
+    font-size: 16px
+}
+
+.subscripe form button {
+    color: #fff;
+}
+
+.subscripe form button:hover {
+    background-color: #3f454d;
+    color: #fff;
+}
+
+footer .complain [type="submit"]:hover{
+    color: #575758
+}
+
+.up{
+    color: #fff;
+    border-color: #3f454d
+}
+
+.up:hover{
+    background-color: #3f454d;
+    color: #ddd
+}
+
+/*=============================================== start about us page ==============================================*/
+.wrap_about_us .main {
+    background: url(../img/about_2.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 60vh;
+}
+
+.wrap_about_us .main .overlay{
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.wrap_about_us .about_us h2 hr{
+    background-color: #f0f3f6
+}
+
+.wrap_about_us .our_team {
+    background-color: #f0f3f6;
+}
+
+.wrap_about_us .our_team .heading h2 hr{
+    background-color: #108bea;
+}
+
+.wrap_about_us .join {
+    background-color: #3f454d;
+}
+
+.wrap_about_us .join a{
+    text-decoration: none
+}
+
+.wrap_about_us .join a:hover{
+    color: #3f454d
+}
+/*=============================================== end about us page ==============================================*/
+
+/*=============================================== start contact us page ==============================================*/
+.wrap_contact_us .main {
+    height: 60vh;
+    background: url(../img/contact_4.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.wrap_contact_us .main .overlay{
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.wrap_contact_us .contact_core .get_in_touch .heading h3{
+    color: #262626
+}
+
+.wrap_contact_us .contact_core .get_in_touch_addrtess ul li h4{
+    color: #575758
+}
+
+.wrap_contact_us .contact_core .get_in_touch_addrtess ul li i{
+    color: #108bea
+}
+
+.wrap_contact_us .contact_core form input[type="submit"]{
+    background-color: #3f454d;
+    border: 0
+}
+
+.wrap_contact_us .contact_core form input[type="submit"]:hover{
+    background-color: #262626;
+    border: 0
+}
+/*=============================================== end contact us page ==============================================*/
+
+/*=============================================== start newcompany page ==============================================*/
+.new_company .heading h2 hr{
+    background-color: #f0f3f6
+}
+
+.new_company .new_company_contact form input[type="submit"]{
+    background-color: #262626;
+    border: 0
+}
+
+.new_company .new_company_contact form input[type="submit"]:hover{
+    background-color: #3f454d;
+    border: 0
+}
+/*=============================================== end newcompany page ==============================================*/
+.newcompany_main {
+    background: url(../img/company_3.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+/*=============================================== start search result page ==============================================*/
+/*
+.wrap_search_result{
+    overflow-x: hidden
+}
+*/
+.wrap_search_result .main{
+    background: url(../img/searchpahe_banner.jpeg) no-repeat bottom center fixed;
+    background-size: cover
+}
+
+.search_result{
+    background-color: rgba(189, 193, 203, .5)
+}
+
+.fixed_div{
+    background-color: #262626;
+    border: 1px solid #ddd;
+    width: 70%!important;
+    margin: auto
+}
+
+.profile .our-team #carousel-example-generic li, .search_result .our-team #carousel-example-generic li{
+    border: 0;
+    background-color: #ddd
+}
+
+.profile .our-team #carousel-example-generic li.active, .search_result .our-team #carousel-example-generic li.active{
+    background-color: #3f454d
+}
+
+.profile .our-team a, .search_result .our-team a{
+    color: #108bea
+}
+/*=============================================== end search result page ==============================================*/
+
+/*=============================================== start profile page ==============================================*/
+.wrap_profile .main {
+    background: url(../img/pro_banner.jpg) no-repeat left center fixed;
+    background-size: cover;
+}
+
+.profile .portofolio .profile_form input[type="submit"]{
+    border: 0;
+    background-color: #3f454d
+}
+
+.profile .portofolio .profile_form input[type="submit"]:hover{
+    background-color: #262626
+}
+/*=============================================== end profile page ==============================================*/

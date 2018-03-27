@@ -1,0 +1,16 @@
+.changed{
+    height: 100px;
+    width: 100px;
+    background-color: #333;
+    float: left;
+    color: #fff;
+    margin: 5px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 800;
+    cursor: pointer
+}
+
+.red{
+    background-color: red
+}

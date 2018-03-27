@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Controllers\admin;
+
+use App\Http\Controllers\Controller;
+use App\Setting;
+use Illuminate\Http\Request;
+
+class landingPageController extends Controller
+{
+
+    public function create() {
+        $mainData = Setting::pluck('value','key');
+        if (count($mainData) > 0) {
+            return view('admin/landingPage.update',compact('mainData'));
+        }
+        return view('admin/landingPage.create');
+    
+    }
+
+    public function store(Request $request) {
+        foreach ($request->except('_token') as $key => $value ) {
+            Setting::updateOrCreate(array('key' => $key),array('value' => $value));
+        }
+        return redirect()->route('categories.index')->with('success','Main Data created successfuly');
+    }
+
+}

@@ -1,0 +1,17 @@
+/*table td , action column*/
+.box-body td a:first-child {
+    float: left;
+}
+.box-body td form button {
+    float: left;
+    margin-left: 2px;
+}
+
+/*Flash message*/
+#flash-message {
+    position: absolute;
+    width: 17%;
+    top: 53px;
+    right: 14px;
+    z-index: 10;
+}

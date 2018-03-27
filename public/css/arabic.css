@@ -1,0 +1,70 @@
+.navbar-right{
+    float: left!important
+}
+
+.main input[type="search"]{
+    letter-spacing: 0;
+    width: 480px;
+}
+
+.main input[type="submit"]{
+    left: -27px;
+    top: -1px;
+    float: right;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px
+}
+
+.new_client .single_card{
+    padding-right: 0
+}
+
+.new_client .single_card img{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px
+}
+
+
+.wrap_about_us .join a{
+    float: left
+}
+
+.contact_core .get_in_touch_addrtess ul li i{
+    float: right;
+    margin-right: 0;
+    margin-left: 20px
+}
+
+.search_result .single_search .single_search_contact li{
+    overflow: hidden
+}
+
+.search_result .single_search .single_search_contact .tag{
+    float: right;
+    margin-left: 10px
+}
+
+.search_result .single_search .single_search_contact .show_more i{
+    transform: rotate(180deg)
+}
+
+.profile .portofolio .portofolio_info .tag{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px
+}
+
+.profile .portofolio .description, .profile .portofolio .services{
+    padding-left: 0;
+    padding-right: 10px
+}
+
+.carousel-3d-container{
+    direction: ltr
+}
+
+.up{
+    right: auto;
+    left: 20px;
+}
