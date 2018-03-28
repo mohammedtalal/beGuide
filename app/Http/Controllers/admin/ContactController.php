@@ -29,8 +29,8 @@ class ContactController extends Controller
             'phone'    =>'required|regex:/(01)[0-9]{9}/',
             'email'    =>'required|email',
             'lat'    =>'required',
-            'lng'    =>'required',
-            'logo'    =>'required|image/*'
+            'long'    =>'required',
+            'logo'    =>'required|mimes:jpeg,bmp,png'
         ]);
         $contact = new Contact;
 
@@ -59,18 +59,20 @@ class ContactController extends Controller
         return view('admin/contact.edit',compact('contact'));
     }
 
-    public function update($id){
+    public function update( $id){
+
         $contact = Contact::find($id);
-        $this->validate(request(), [
-            'companyName' => 'required',
-            'address' => 'required',
-            'description' => 'required',  
-            'phone'    =>'required|regex:/(01)[0-9]{9}/',
-            'email'    =>'required|email',
-            'lat'    =>'required',
-            'lng'    =>'required',
-            'logo'    =>'required|image/*'
-        ]);
+        // $this->validate(request(), [
+        //     'companyName' => 'required',
+        //     'address' => 'required',
+        //     'description' => 'required',  
+        //     'phone'    =>'required|regex:/(01)[0-9]{9}/',
+        //     'email'    =>'required|email',
+        //     'lat'    =>'required',
+        //     'long'    =>'required',
+        //     'logo'    =>'required|mimes:jpeg,bmp,png'
+        // ]);
+        // dd('asdasd');
 
         $contact->companyName = request('companyName');
         $contact->address = request('address') ;
@@ -82,10 +84,10 @@ class ContactController extends Controller
         
 
         $image = request('logo');
-        $imageName = date('Y-m-d-h-i-s').$image->getClientOriginalName();
+        // dd($image);
+        $imageName = uniqid().$image->getClientOriginalName();
         $image->move(public_path('/images/logo/') ,$imageName);
         $contact->logo = $imageName;
-
         $contact->save();
         return redirect()->route('admin.contact.index')->with('success','Contact-us updated Successfully');
     }

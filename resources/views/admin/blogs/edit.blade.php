@@ -35,7 +35,7 @@
 				<div class="form-group col-md-12">
 					<label for="body">Blog Body</label>
 					<br>	
-					<textarea name="body" id="body" cols="30" rows="15" class="form-control" pattern=".*\S+.*" required>{{ $blog->body }}</textarea>
+					<textarea name="body" id="body" cols="30" rows="15" class="form-control" pattern=".*\S+.*" required>{{ str_ireplace('-',' ',$blog->body) }}</textarea>
 				</div>
 
 				<div class="form-group col-md-12">
@@ -47,3 +47,9 @@
 	</div>	
 </div>
 @endsection
+
+@push('extra-script')
+	<!-- tinymce texteeditor  -->
+     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+     <script>tinymce.init({ selector:'textarea' });</script>
+@endpush

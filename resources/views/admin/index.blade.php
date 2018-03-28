@@ -9,7 +9,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">  <!-- VueJs csrf_token -->
 
         {{ Html::style('css/app.css')}}
-  
+    
         <!--============== fontAweasome CSS ==============-->
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
         <!--============== bootstrap CSS ==============-->

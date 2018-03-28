@@ -12,7 +12,7 @@
 
                     
                     <form action="{{ route('search-result') }}" method="GET">
-                        <input type="search" name="address" id="address" placeholder="Search by name, location also phone..." autofocus>
+                        <input type="search" name="address" id="address" placeholder="Search by name, location also phone..." pattern=".{3,}"   required title="write 3 characters minimum" autofocus >
                         <input type="submit" value="&#xf002" name="send">
                         <label for="near" class="text-left">
                             <input id="near" name="near" class="cheked_input" type="checkbox">

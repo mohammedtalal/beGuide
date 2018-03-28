@@ -23,7 +23,8 @@
         <link rel="stylesheet" href="{{ asset('css/color.css') }}">
         <!--============ jQuery liberary ============-->
         <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-
+<!--  <meta name="description" content="bla blaa blaa">
+        <title>cctv</title> --> 
 
         @yield('extra-style')
         <!-- <link rel="stylesheet" href="css/bootstrap-rtl.min.css">-->

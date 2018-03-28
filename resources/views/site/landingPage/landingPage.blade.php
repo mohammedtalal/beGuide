@@ -11,10 +11,10 @@
         <div class="container-fluid"><!--Start container-->
             <div class="heading text-center">
                 <h2>
-                    {{ mainData('BestclientText') }}
+                    {{ mainData('bestClientText') }}
                     <hr>
                 </h2>
-                <p> {{ mainData('BestclientBio') }}</p>
+                <p> {{ mainData('bestClientBio') }}</p>
             </div>
             <div class="row"><!--Start row-->
                 @foreach($branches as $branch)

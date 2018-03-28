@@ -13,7 +13,7 @@
 			  <h3 class="box-title">Contact-Us Data</h3>
 			</div>
 			<div class="box-body">
-				<form method="POST" action="{{ route('contact.update',$contact->id) }}" >
+				<form method="POST" action="{{ route('contact.update',$contact->id) }}" enctype="multipart/form-data">
 
 				{{ csrf_field() }}
 				<div class="form-group col-md-6">
@@ -48,12 +48,12 @@
 
 				<div class="form-group col-md-6">
 					<label for="long">Longtude</label>
-					<input type="number" class="form-control" id="long" name="long" value="{{ $contact->long }}" required>
+					<input type="number" class="form-control" id="long" name="long" value="{{ $contact->lng }}" required>
 				</div>
 
 				<div class="form-group col-md-12">
 					<label for="logo">Site Logo</label>
-					<input type="file" class="form-control" id="logo" name="logo" required>
+					<input type="file" class="form-control" id="logo" name="logo" accept="image/*" required>
 				</div>
 
 				<div class="form-group col-md-12">

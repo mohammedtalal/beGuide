@@ -15,7 +15,7 @@
                         <img src="{{ asset('images/blogs/'.$titleBlog->blog_image) }}" alt="blog image">
                         <h2> {{ str_replace('-',' ',$titleBlog->title) }} </h2>
                         <hr>
-                        <p> {{ $titleBlog->body }} </p>
+                        <p>  {!! $titleBlog->body !!} </p>
                         <a href="{{ route('allBlogs') }}"><i class="fa fa-angle-double-left"></i>Back</a>
                     </div>
                 </div>

@@ -16,6 +16,35 @@
 			<div class="box-body">
 				<form method="POST" action="{{ route('landingPage.store') }}" enctype="multipart/form-data">
 					{{ csrf_field() }}
+					<!-- Start Navbar section   -->
+					<fieldset class="form-group">
+						<legend>Navbar Section</legend>
+						<div class="form-group col-md-6">
+							<label for="homeLink">Home Link</label>
+							<input type="text" class="form-control" id="homeLink" name="homeLink" value="{{ $mainData['homeLink'] }}"  required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="aboutUs">About-us Link</label>
+							<input type="text" class="form-control" id="aboutUs" name="aboutUs" value="{{ $mainData['aboutUs'] }}"  required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="contactUs">Contact-us Link</label>
+							<input type="text" class="form-control" id="contactUs" name="contactUs" value="{{ $mainData['contactUs'] }}"  required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="addCompany">Add company Link</label>
+							<input type="text" class="form-control" id="addCompany" name="addCompany" value="{{ $mainData['addCompany'] }}"  required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="blog">Blog Link</label>
+							<input type="text" class="form-control" id="blog" name="blog" value="{{ $mainData['blog'] }}"  required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="login">Login Link</label>
+							<input type="text" class="form-control" id="login" name="login" value="{{ $mainData['login'] }}"  required>
+						</div>
+					</fieldset>
+					<!-- End Navbar section -->
 					<!-- Start Head Text   -->
 					<fieldset class="form-group">
 						<legend>Heading Section</legend>
@@ -33,12 +62,12 @@
 					<fieldset class="form-group">
 					<legend>Best Client Section</legend>
 						<div class=" form-group col-md-6">
-							<label for="BestclientText">Head Best Client Text</label>
-							<input type="text" class="form-control" id="BestclientText" name="BestclientText" value="{{ $mainData['BestclientText'] }}" required>
+							<label for="bestClientText">Head Best Client Text</label>
+							<input type="text" class="form-control" id="bestClientText" name="bestClientText" value="{{ $mainData['bestClientText'] }}" required>
 						</div>
 						<div class="form-group col-md-6">
-							<label for="client-text">Best Client bio</label>
-							<input type="text" class="form-control" id="clientBio" name="BestclientBio" value="{{ $mainData['BestclientBio'] }}" required>
+							<label for="bestClientBio">Best Client bio</label>
+							<input type="text" class="form-control" id="bestClientBio" name="bestClientBio" value="{{ $mainData['bestClientBio'] }}" required>
 						</div>
 					</fieldset>
 					<!-- Start Best Clients section -->

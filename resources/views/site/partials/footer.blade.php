@@ -1,8 +1,8 @@
 <footer>
-    <div class="container-fluid"><!--start Container-->
+    <div class="container"><!--start Container-->
         <div class="row"><!--start row-->
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="footer_about">
                     <img src="{{ asset('images/logo/'.logo()) }}" alt="logo">
                     <p>
@@ -11,41 +11,36 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="main_links">
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled" style="float:right" >
                         <li>
-                            <a href="{{ route('landingPage.index') }}">Home</a>
+                            <a href="{{ route('landingPage.index') }}">{{ mainData('homeLink') }}</a>
                         </li>
                         <li>
-                            <a href="{{ route('about.index') }}">About Us</a>
+                            <a href="{{ route('about.index') }}">{{ mainData('aboutUs') }}</a>
                         </li>
                         <li>
-                            <a href="{{ route('contact.index') }}">Contact Us</a>
+                            <a href="{{ route('contact.index') }}">{{ mainData('contactUs') }}</a>
                         </li>
                         <li>
-                            <a href="{{ route('addCompany.index') }}">Add Company</a>
+                            <a href="#">{{ mainData('login') }}</a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled" >
+                        <li>
+                            <a href="{{ route('addCompany.index') }}">{{ mainData('addCompany') }}</a>
                         </li>
                         <li>
-                            <a href="#">Log In</a>
+                            <a href="{{ route('allBlogs') }}">{{ mainData('blog') }}</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="complain text-center">
-                    <div class="heading">
-                        <p>Your Complain</p>
-                    </div>
-                    <form action="" method="post">
-                        <input class="btn-lg" type="text" placeholder="complain" name="complain">
-                        <input class="btn-lg" type="submit" name="send" value="&#xf1d8">
-                    </form>
-                </div>
-            </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="footer_socials">
                     <h3 class="text-center">Contact Us</h3>
                     <ul class="list-unstyled list-inline text-center">

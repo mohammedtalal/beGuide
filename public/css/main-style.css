@@ -709,7 +709,8 @@ footer .footer_about p{
     footer .footer_about p{ font-size: 14px }
 }
 
-footer .main_links{ padding-left: 40% }
+footer .main_links{ padding-left: 0; text-align: center; }
+
 
 @media(max-width: 775px){
     footer .main_links{padding-left: 0}
@@ -977,6 +978,7 @@ footer .footer_socials a:hover{
     padding: 10px 30px;
     font-size: 30px;
     transition: all .3s ease-in-out
+    float: left;
 }
 
 @media(min-width: 995px) and (max-width: 1366px){

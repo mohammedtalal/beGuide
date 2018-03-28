@@ -31,7 +31,7 @@
 		                <tr>
 		                  	<td>{{ $key + $allBlogs->firstItem() }}</td>
 				            <td>{{ str_replace('-',' ',$blog->title) }}</td>
-				            <td> {{ str_limit($blog->body,350) }}</td>  
+				            <td> {!! str_limit($blog->body,350) !!}</td>  
                       		<td>{{ $blog->alt }}</td> 
 
                       		<td>

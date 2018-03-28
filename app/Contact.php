@@ -15,7 +15,7 @@ class Contact extends Model
 		'logo',
 		'companyName',
 		'description',
-		'lng',
+		'long',
 		'lat'
 	];
 }

@@ -38,7 +38,7 @@ function numberOfPendingRequests() {
 // Number of 
 function dashboardOverViewNumbers($key) {
 	$categories = \App\Category::count();
-	$subCategories = \App\Category::where('parent_id',0)->count();
+	$subCategories = \App\Category::where('parent_id','!=',0)->count();
 	$companies = \App\Company::count();
 	$branches = \App\Branch::count();
 	$pendingCompanies = \App\CompanyOwner::where('status',0)->count();
