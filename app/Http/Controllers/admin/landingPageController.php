@@ -20,9 +20,13 @@ class landingPageController extends Controller
 
     public function store(Request $request) {
         foreach ($request->except('_token') as $key => $value ) {
+            $this->validate($request, [
+                $key  => 'required',
+            ]);
             Setting::updateOrCreate(array('key' => $key),array('value' => $value));
         }
-        return redirect()->route('categories.index')->with('success','Main Data created successfuly');
+       
+        return redirect()->route('landingPage.create')->with('success','Main Data created successfuly');
     }
 
 }

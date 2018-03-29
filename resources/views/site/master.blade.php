@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title></title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        {!! mainData('headTags') !!}
+        <!-- meta name="blaabla" content="blaa blaa",meta name="aaaa" -->
         
         <link rel="icon" href="img/" type="image/png">
         <!--============== Raleway Google Fonts ==============-->
@@ -13,7 +14,7 @@
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
         <!--============== bootstrap CSS ==============-->
         <!-- bootstrap-rtl.min.css -->
-        
+             
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-rtl.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/arabic.css') }}">
